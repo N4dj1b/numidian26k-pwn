@@ -12,22 +12,30 @@ BuildingOS v3.1 · Smart Arcade Complex · 5 Challenges
 | 04 | Power Grid | Hard | ARM64 | 13374 | PIE + Custom Canary + Stack Pivot |
 | 05 | Vault Driver | Hard | Kernel x86_64 | 13375 | TOCTOU Race + Cred Overwrite |
 
+Each challenge folder contains the source, a player-facing `dist/`, and an
+`exploit/` folder with a working solver. Full writeups live in each
+challenge's `WRITEUP.md`; see [`WRITEUP_INDEX.md`](WRITEUP_INDEX.md) for a
+guided index.
+
+> **Note:** The `flag.txt` files contain the original event flags and are
+> included for archival/writeup purposes.
+
 ## Quick Start
 
 ```bash
 # Build all challenges
 ./setup.sh
-make -C challenges/01-entry-gate
-make -C challenges/02-token-terminal
-make -C challenges/03-staff-chat
-make -C challenges/04-power-grid
-make -C challenges/05-vault-driver
+make -C 01-entry-gate
+make -C 02-token-terminal
+make -C 03-staff-chat
+make -C 04-power-grid
+make -C 05-vault-driver
 
 # Start all challenges
 docker-compose up -d
 
 # Test individual challenge (e.g. 05)
-cd challenges/05-vault-driver/dist
+cd 05-vault-driver/dist
 ./run.sh
 ```
 
@@ -42,7 +50,7 @@ cd challenges/05-vault-driver/dist
 The kernel challenge requires `dist/bzImage` and a generated `dist/rootfs.cpio.gz`. 
 Build the rootfs with:
 ```bash
-cd challenges/05-vault-driver
+cd 05-vault-driver
 make rootfs
 ```
 

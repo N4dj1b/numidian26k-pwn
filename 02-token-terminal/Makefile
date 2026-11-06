@@ -7,6 +7,7 @@ CFLAGS = -m32 -O1 -fno-pie -no-pie -fno-stack-protector \
 all: build/pos
 
 build/pos: src/pos.c
+	mkdir -p build
 	$(CC) $(CFLAGS) -o $@ $<
 
 dist: build/pos

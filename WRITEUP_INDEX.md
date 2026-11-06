@@ -5,7 +5,7 @@ All writeups are located in their respective challenge directories.
 ## Writeup Locations
 
 ### Challenge 01: Entry Gate (ARM32 - Easy)
-**Path:** `challenges/01-entry-gate/WRITEUP.md`
+**Path:** `01-entry-gate/WRITEUP.md`
 
 **Topics Covered:**
 - ARM32 buffer overflow
@@ -19,7 +19,7 @@ All writeups are located in their respective challenge directories.
 ---
 
 ### Challenge 02: Token Terminal (x86_32 - Medium)
-**Path:** `challenges/02-token-terminal/WRITEUP.md`
+**Path:** `02-token-terminal/WRITEUP.md`
 
 **Topics Covered:**
 - Integer truncation (16-bit to 32-bit cast)
@@ -32,7 +32,7 @@ All writeups are located in their respective challenge directories.
 ---
 
 ### Challenge 03: Staff Chat (x86_64 - Medium)
-**Path:** `challenges/03-staff-chat/WRITEUP.md`
+**Path:** `03-staff-chat/WRITEUP.md`
 
 **Topics Covered:**
 - Use-After-Free (UAF) in messaging objects
@@ -45,7 +45,7 @@ All writeups are located in their respective challenge directories.
 ---
 
 ### Challenge 04: Power Grid (ARM64 - Hard)
-**Path:** `challenges/04-power-grid/WRITEUP.md`
+**Path:** `04-power-grid/WRITEUP.md`
 
 **Topics Covered:**
 - Custom canary using modular arithmetic
@@ -58,7 +58,7 @@ All writeups are located in their respective challenge directories.
 ---
 
 ### Challenge 05: Vault Driver (Kernel x86_64 - Hard)
-**Path:** `challenges/05-vault-driver/WRITEUP.md`
+**Path:** `05-vault-driver/WRITEUP.md`
 
 **Topics Covered:**
 - Kernel Double-Fetch race conditions
@@ -85,5 +85,5 @@ All writeups are located in their respective challenge directories.
 
 ```bash
 # View any writeup
-cat challenges/<challenge-dir>/WRITEUP.md
+cat <challenge-dir>/WRITEUP.md
 ```

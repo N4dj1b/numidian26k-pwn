@@ -8,6 +8,7 @@ CFLAGS = -O1 -fPIE -pie -fstack-protector-strong \
 all: build/chat
 
 build/chat: src/chat.c
+	mkdir -p build
 	$(CC) $(CFLAGS) -o $@ $<
 	cp $@ dist/chat
 

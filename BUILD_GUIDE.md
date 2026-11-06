@@ -19,19 +19,19 @@
 
 ```bash
 # Challenge 01 - ARM32
-make -C challenges/01-entry-gate
+make -C 01-entry-gate
 
 # Challenge 02 - x86_32
-make -C challenges/02-token-terminal
+make -C 02-token-terminal
 
 # Challenge 03 - x86_64
-make -C challenges/03-staff-chat
+make -C 03-staff-chat
 
 # Challenge 04 - ARM64
-make -C challenges/04-power-grid
+make -C 04-power-grid
 
 # Challenge 05 - Kernel
-make -C challenges/05-vault-driver rootfs
+make -C 05-vault-driver rootfs
 ```
 
 ## Challenge 05 Notes
@@ -39,7 +39,7 @@ make -C challenges/05-vault-driver rootfs
 The kernel challenge has a dedicated rootfs builder. If you modify the driver or the exploit, you must repack the filesystem:
 
 ```bash
-cd challenges/05-vault-driver
+cd 05-vault-driver
 make rootfs
 ```
 
@@ -59,7 +59,7 @@ Each challenge directory contains a `run.sh` (or `run-qemu.sh`) in its `dist/` f
 
 ```bash
 # Example: Testing Vault Driver
-cd challenges/05-vault-driver/dist
+cd 05-vault-driver/dist
 ./run.sh
 ```
 

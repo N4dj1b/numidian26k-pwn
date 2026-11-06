@@ -4,7 +4,7 @@
 
 ### Option 1: Using Docker (Recommended for CTF Environment)
 ```bash
-cd challenges/02-token-terminal
+cd 02-token-terminal
 docker compose up -d
 python3 exploit/solve.py --docker
 docker compose down
@@ -14,7 +14,7 @@ docker compose down
 
 ### Option 2: Local Testing (For development)
 ```bash
-cd challenges/02-token-terminal
+cd 02-token-terminal
 make
 ./pos
 # In another terminal:
@@ -89,7 +89,7 @@ sudo apt-get install -y gcc-multilib python3-pwnc
 
 #### 2. Build the Challenge
 ```bash
-cd challenges/02-token-terminal/src
+cd 02-token-terminal/src
 gcc -m32 -O1 -fno-stack-protector -no-pie -o pos pos.c
 cp pos ../build/
 cp pos ../
@@ -97,18 +97,18 @@ cp pos ../
 
 #### 3. Create Flag File
 ```bash
-echo "CTF{test_flag}" > challenges/02-token-terminal/flag.txt
+echo "CTF{test_flag}" > 02-token-terminal/flag.txt
 ```
 
 #### 4. Run the Server
 ```bash
-cd challenges/02-token-terminal
+cd 02-token-terminal
 ./pos
 ```
 
 #### 5. Run the Exploit (in another terminal)
 ```bash
-cd challenges/02-token-terminal
+cd 02-token-terminal
 python3 exploit/solve.py --host localhost --port 1337
 ```
 

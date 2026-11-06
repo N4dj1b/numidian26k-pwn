@@ -13,6 +13,7 @@ CFLAGS_THUMB = -O1 -march=armv7-a -mfpu=vfpv3 -mfloat-abi=hard -mthumb -mthumb-i
 all: build/doorbell
 
 build/validate_thumb.o: src/validate.c
+	mkdir -p build
 	$(CC_ARM) $(CFLAGS_THUMB) -c -o $@ $<
 
 build/doorbell: src/doorbell.c build/validate_thumb.o
